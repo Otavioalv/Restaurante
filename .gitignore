@@ -9,3 +9,7 @@
 # Documentation here: https://yarnpkg.com/features/zero-installs
 !.yarn/cache
 #.pnp.*
+.yarn/cache/@babel-code-frame-npm-7.18.6-25229a7e34-195e2be317.zip
+*.zip
+*.zip
+.yarn/cache/@npmcli-fs-npm-2.1.2-08d434e77b-405074965e.zip
