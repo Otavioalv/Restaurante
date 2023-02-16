@@ -1,16 +1,18 @@
 
 html{
     display: block;
-    background-color: #000;
+    background-color: #ffffff;
 }
 
 body{
+    display: grid;
     background-color: #fff;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
     /* width: 95em; */
-    width: 75%;
+    width: 77%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
 }
 
 .__logo{
@@ -20,36 +22,53 @@ body{
 header{
     display: grid;
     grid-template-columns: 1fr 0fr;
-    background-color: rgba(255, 1, 192, 0.144);
+    position: fixed;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+    width: 75%;
+    padding-top: 20px;
 }
 
 
 .opc{
-    display: grid;
-    background-color: rgba(0, 255, 255, 0.404);
+    background-color: rgba(255, 255, 255, 0.404);
+    grid-column: 1/3;
+    display: none;
+    cursor: pointer;
 }
 
 .opc--botton{
     background: url(../img/menu-iconP.png) no-repeat;
-    /* background-image: url(http://endereco-da-imagem.com.br/imagem.png); */
     width: 16px;
     height: 16px;
+    padding: 10px;
+    cursor: pointer;
 }
 
-.opc--botton:hover .opc__ul{
+#bottom-special::after{
+    content: "";
+    box-sizing: border-box;
+    position: relative;
     display: block;
+    width: 0px;
+    height: 0px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid currentColor;
+    left: 110px;
+    bottom: 14px;
 }
 
 .opc__ul{
-    /* background-color: rgba(0, 60, 255, 0.199); */
     list-style: none;
     padding: 12px;
-    /* display: none; */
 }
 
 .opc__ul li{
     list-style: none;
     position: relative;
+    margin: 15px 15px 15px 0px;
+    font-weight: 100;
 }
 
 .opc__ul li a{
@@ -59,22 +78,20 @@ header{
 }
 
 .opc li a:hover{
-    color:#fff;
-    -moz-box-shadow:0 3px 10px 0 #CCC;
-    -webkit-box-shadow:0 3px 10px 0 #ccc;
-    text-shadow:0px 0px 5px #fff;
+    color: #f34949;
 }
 
 .opc li ul{
-    position:absolute;
+    position: absolute;
     left:0;
+    border-bottom: 2px solid#f34949; 
     display: none;
 }
 
-.opc li:hover ul{
+/* .opc li:hover ul{
     display:block;
     position: relative;
-}
+} */
 
 .opc li ul li{
     display:block;
