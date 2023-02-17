@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Aparecimento Gradual</title>
+    <style>
+      .texto-gradual p {
+        opacity: 0;
+        transform: translateY(0px);
+        transition: transform 0.5s ease-in-out;
+      }
+      
+      .texto-gradual p.animate {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="texto-gradual">
+      <p>otavio</p>
+      <p>gabriel</p>
+      <p>alves</p>
+      <p>barbosa</p>
+    </div>
+    <script>
+      const linhas = document.querySelectorAll('.texto-gradual p');
+      linhas.forEach((linha, index) => {
+        setTimeout(() => {
+          linha.classList.add('animate');
+        }, 500 * (index + 1));
+      });
+    </script>
+  </body>
+</html>
