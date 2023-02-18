@@ -9,12 +9,30 @@ body{
     margin-left: auto;
     margin-right: auto;
     /* width: 95em; */
-    width: 77%;
+    width: 77%; 
+    /* width: calc(90% + 100px); */
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 200;
 }
 
+/* botoa */
+.button-m{
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #f34949;
+    color: white;
+    font-size: 1em;
+    font-weight: 100;
+    border: 0;
+    transition: background-color .2s ease-out;
+}
 
+.button-m:hover{
+    background-color: #cc3c3c;
+    box-shadow: 0 0 5vh rgb(255, 227, 227);
+}
+/*  */
 /* Logo */
 .__logo{
     width: 110px;
@@ -215,25 +233,34 @@ header{
     border-right: 1px solid rgb(232, 236, 240);
 }
 
-.info-prods__e{}
+.info-prods__3{}
 
 /* CONFIGURAÇÃO TOTAL demos*/
 
 .demos{
     display: block;
+    /* background-color: #f34949; */
 }
 
-.demos__img-1{
+
+/* IMAGENS REPRESENTAVIVASA */
+.demos__imgs{
+    overflow: hidden;
     position: relative;
     max-width: 70vh;
     max-height: 70vh;
     margin-bottom: 8vh;
 }
 
-.demos__img-1 img{
+.demos__imgs img{
     height: 100%; 
     width: 100%;  
 }
+
+.demos__img-div{
+    margin: 10px;
+}
+/*  */
 
 /* Apresentação */
 .demos__apresen{
@@ -287,6 +314,62 @@ header{
 /*  */
 
 /*  */
+
+/* SPECIALITIES */
+.special{
+    display: flex;
+    flex-direction: column;
+    /* align-items: first baseline */;
+    background-color: rgb(247, 248, 249);
+
+    margin-top: 40px;
+}
+.special__title{
+    text-align: center;
+    margin: auto;
+}
+.special__div{
+    display: flex;
+    margin: auto;
+ /*    background-color: rgb(255, 206, 206); */
+}
+
+.special__img{
+    width: 35vh;
+    height: 45vh;
+    min-width: 35vh;
+    min-height: 45vh;
+    box-shadow: 1vh 1vh 1vh #cccccc;
+    margin: 2vh;
+}
+
+.special__img img{
+    width: 100%;
+    height: 100%;
+}
+
+.special__text{
+    border-top: 1px solid #000000;
+    max-width: 30vh;    
+    margin: 10px;
+}
+
+.special__div h1{
+    font-size: 3em;
+    margin-top: 0;
+}
+
+.special__text h2{
+    font-weight: 600;
+}
+
+.special__text h3{
+    font-size: 1.6em;
+}
+
+.special__text p{}
+
+
 
 /* ------Fim Section------ */
 
