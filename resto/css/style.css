@@ -1,6 +1,6 @@
 
 html{
-    background-color: rgb(255, 249, 236);
+    background-color: #ffffff;
 }
 
 body{
@@ -9,8 +9,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     /* width: 95em; */
-    width: calc(90% + 100px);
-    max-width: 100%;
+    width: 77%;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 200;
 }
@@ -51,7 +50,7 @@ header{
     position: fixed;
     top: 0px;
     background-color: rgb(255, 255, 255);
-    width: calc(90% + 100px);
+    width: 77%;
     padding: 20px 0px 10px 0px;
     z-index: 1000;
 }
@@ -160,7 +159,7 @@ header{
 /* -----Começo Section----- */
 
 .csection{
-    padding-top: 150px;
+    margin-top: 150px;
 }
 
 /* INFORMAÇÕE DE TRABALHO */
@@ -239,7 +238,7 @@ header{
 /* Apresentação */
 .demos__apresen{
     display: flex;
-
+    background-color: rgba(0, 255, 255, 0.123);
 }
 
 
@@ -252,46 +251,36 @@ header{
     height: 80vh;
     margin-right: 10px;
     max-width: 100vh;
-    box-shadow: 1vh 1vh 1vh rgb(231, 231, 231);
 }
 
 .demos__img-2 img{
-    height: 100%;
+    height: 80vh;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    box-shadow: 1vh 1vh 1vh rgb(202, 202, 202);
 }
-
 
 
 .demos__apresen-titulo{
     padding: 0;
     margin-bottom: 50px;
-    margin: 0;
-    margin-bottom: 20px;
 }
 
 .demos__apresen-text{
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 55%;
+    max-width: 24em;
     margin-left: 20px;
+    background-color: #f3494933;
 }
-
 
 .demos__apresen-text h1{
     font-weight: 900;
     font-size: 30px;
-    margin-top: 0;
-    margin: 0;
 }
-
-.demos__apresen-text h3{
-    margin-bottom: 0;
-}
-
 /*  */
 
 /*  */
