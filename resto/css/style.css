@@ -1,35 +1,64 @@
 
 html{
-    display: grid;
-    background-color: #ffffff;
+    background-color: rgb(255, 249, 236);
 }
 
 body{
-    display: grid;
     background-color: #fff;
+    margin:0;
     margin-left: auto;
     margin-right: auto;
     /* width: 95em; */
-    width: 77%;
+    width: calc(90% + 100px);
+    max-width: 100%;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 200;
 }
 
+
+/* Logo */
 .__logo{
     width: 110px;
 }
+/*  */
+
+/* Texto */
+h1{
+    font-weight: 900;
+    font-size: 30px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+h3{
+    font-size: 15px;
+    font-weight: 100;
+    color: #f34949;
+}
+
+p{
+    font-weight: 100;
+    font-size: 17px;
+    color:#4e4e4e
+}
+/*  */
+
+
 /* ----COMEÇO DA PAGINA 'HEADER'---- */
+/* -----header dp prejeto ------*/
 header{
     display: grid;
     grid-template-columns: 1fr 0fr;
     position: fixed;
     top: 0px;
     background-color: rgb(255, 255, 255);
-    width: 77%;
+    width: calc(90% + 100px);
     padding: 20px 0px 10px 0px;
+    z-index: 1000;
 }
+/*  */
 
 
+/* Menu de ocpções */
 .opc{
     background-color: rgba(255, 255, 255, 0.404);
     grid-column: 1/3;
@@ -97,7 +126,8 @@ header{
     display:block;
     animation-fill-mode:none;
 }
-    
+ 
+/* Animação do menu Aparecer e Sumir */
 @keyframes menApa{
     from{heigth: 0px;}
     to{height: 309px;}
@@ -107,7 +137,6 @@ header{
     from{height: 309px}
     to{height: 0px;}
 }
-/* ----FIM DO 'HEADER'---- */
 
 .opc__ul li{
     opacity: 0;
@@ -124,3 +153,148 @@ header{
     opacity: 0;
     transform: translateY(0px);
 }
+/*  */
+/*  */
+/* ----FIM DO 'HEADER'---- */
+
+/* -----Começo Section----- */
+
+.csection{
+    padding-top: 150px;
+}
+
+/* INFORMAÇÕE DE TRABALHO */
+/* Configuração de todos */
+.cTema{
+    display: block;
+}
+
+.cTema h1{
+    font-size: 54px;
+    font-weight: 100;
+}
+/* info-prods e toda a div */
+.info-prods{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 25em;
+    margin-bottom: 30px;
+}
+
+.info{
+    padding: 10px;
+    max-width: 100px;
+    max-height: 80px;
+}
+
+.info__item{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 7px;
+}
+
+.info__item img{
+    width: 100%;
+    height: 100%;
+}
+
+.info h2{
+    text-align: center;
+    position: relative;
+    margin: auto;
+    font-weight:500;
+    font-size: 17px;
+}
+/*  */
+
+/* Configuração individual */
+.info-prods__1{}
+
+.info-prods__2{
+    border-left: 1px solid rgb(232, 236, 240);
+    border-right: 1px solid rgb(232, 236, 240);
+}
+
+.info-prods__e{}
+
+/* CONFIGURAÇÃO TOTAL demos*/
+
+.demos{
+    display: block;
+}
+
+.demos__img-1{
+    position: relative;
+    max-width: 70vh;
+    max-height: 70vh;
+    margin-bottom: 8vh;
+}
+
+.demos__img-1 img{
+    height: 100%; 
+    width: 100%;  
+}
+
+/* Apresentação */
+.demos__apresen{
+    display: flex;
+
+}
+
+
+.demos__img-2{
+/*     object-fit: cover;
+    object-position: center; */
+    overflow: hidden;
+    position: relative;
+    width: 69vh;
+    height: 80vh;
+    margin-right: 10px;
+    max-width: 100vh;
+    box-shadow: 1vh 1vh 1vh rgb(231, 231, 231);
+}
+
+.demos__img-2 img{
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+.demos__apresen-titulo{
+    padding: 0;
+    margin-bottom: 50px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.demos__apresen-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 55%;
+    margin-left: 20px;
+}
+
+
+.demos__apresen-text h1{
+    font-weight: 900;
+    font-size: 30px;
+    margin-top: 0;
+    margin: 0;
+}
+
+.demos__apresen-text h3{
+    margin-bottom: 0;
+}
+
+/*  */
+
+/*  */
+
+/* ------Fim Section------ */
+
