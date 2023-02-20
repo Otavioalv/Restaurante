@@ -25,12 +25,12 @@ body{
     font-size: 1em;
     font-weight: 100;
     border: 0;
-    transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out, box-shadow .2s ease-out;
 }
 
 .button-m:hover{
     background-color: #cc3c3c;
-    box-shadow: 0 0 5vh rgb(255, 227, 227);
+    box-shadow: 0 0 5vh rgb(255, 196, 196);
 }
 /*  */
 /* Logo */
@@ -334,6 +334,11 @@ header{
  /*    background-color: rgb(255, 206, 206); */
 }
 
+.special__div--moblie{  /* FAZER ALTERAÇÃO MOBLIE */
+    display: block;
+    margin: auto;
+}
+
 .special__img{
     width: 35vh;
     height: 45vh;
@@ -367,9 +372,90 @@ header{
     font-size: 1.6em;
 }
 
-.special__text p{}
-
-
-
+.scale-1{
+    transform: scale(-1, 1);
+}
 /* ------Fim Section------ */
 
+/* CONFIGURAÇÕES MENU */
+
+.menu{
+    margin-top: 100px;
+    text-align: center;
+    color: rgb(49, 49, 49);
+}
+
+.menu__list{
+    list-style: none;
+}
+
+.menu__list li{
+    display: flex;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    padding-bottom: 30px;
+    border-bottom: 1px rgb(148, 148, 148) dashed;
+}
+
+.menu__list span{
+    width: 100%;
+    height: 90px;
+}
+
+.menu__list h1{
+    font-weight: 100;
+    font-size: 23px;
+    height: 40px;
+    margin: 0;
+    text-align: end;
+}
+
+.menu__list h2{
+    font-size: 15px;
+    font-weight: 100;
+    height: 20px;
+    margin: 0;
+}
+
+.menu__list__food{
+    display: flex;
+}
+
+.menu__list__food div{
+    margin-top: 14px;
+    margin-left: 15px;
+    text-align: center;
+    height: 100%;
+}
+
+.menu__list-img{
+    position: relative;
+    overflow: hidden;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.menu__list-img img{
+    background-color: aqua;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    transition: width .4s ease-in-out, height .4s ease-in-out;
+    transform: translate(-50%,0%);
+}
+
+.menu__list-img:hover img{
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%,0%);
+}
+
+.menu__div{
+    margin-top: 80px;
+}
+
+.menu__div h2{
+    font-weight: 100;
+}   
+
+/*  */
