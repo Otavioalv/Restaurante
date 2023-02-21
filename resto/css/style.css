@@ -16,7 +16,7 @@ body{
 }
 
 /* botoa */
-.button-m{
+.button-m, .button-g{
     width: 150px;
     height: 40px;
     border-radius: 30px;
@@ -26,9 +26,15 @@ body{
     font-weight: 100;
     border: 0;
     transition: background-color .2s ease-out, box-shadow .2s ease-out;
+    cursor: pointer;
 }
 
-.button-m:hover{
+.button-g{
+    width: 100%;
+}
+
+
+.button-m:hover, .button-g:hover{
     background-color: #cc3c3c;
     box-shadow: 0 0 5vh rgb(255, 196, 196);
 }
@@ -753,5 +759,100 @@ header{
     top: 3px
 }
 /*  */
-/*  */
+/* FIM SPECIALITIES */
+/*  ---------RESERVATION-------*/
+.reservation{
+    background-image: url(/resto/img/reservation-bg.jpg);
+    margin-top: 100px;
+    padding: 10px;
+    /* background-color: #cc3c3c; */
+}
+
+.reservation-form{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin: auto;
+    max-width: 500px;
+    width: 90%;
+    height: 30%;
+    background-color: #ffffff; 
+    padding: 10px;
+    box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.253);
+}
+
+.reservation-form form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.reservation-form input, textarea, .end__newle input{
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    width: auto;
+    height: 35px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    padding: 4px;
+    padding-left: 20px;
+    cursor:text;
+}
+
+.reservation-form textarea{
+    height: 150px;
+}
+
+.dpy-block{
+    display: flex;
+    justify-content: center;
+}
+
+.dpy-block input{
+    width: 45%;
+}
+/* --------FIM RESERVATION-------- */
+
+/* --------FOOTER-------- */
+
+.end{
+    margin-top: 100px;
+}
+
+.end__hours{
+    margin-top: 80px;
+}
+
+
+.end__hours-list{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.end__hours-list ul{
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.end__hours-list li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+/* ---------------- */
+
+.end__newle{
+    margin-top: 100px;
+}
+
+.end__newle input{
+    width: 95%;
+    margin-left: 1.5%;
+}
+
+
+/* ---------FIM FOOTER--------- */
 

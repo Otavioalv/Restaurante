@@ -401,44 +401,32 @@
                     </div>
                 </div>
 
-                <div>
-                    <h3>Reservation</h3>
-                    <h1>Book Now</h1>
-                    <form action="">
-                        <fieldset>
-                            <input type="text" name="" id="" placeholder="Name">
-                        </fieldset>
-
-                        <fieldset>
-                            <input type="email" name="" id="" placeholder="Email">
-                        </fieldset>
-
-                        <fieldset>
-                            <input type="number" name="" id="" placeholder="Phone">
-                        </fieldset>
-
-                        <div>
-                            <fieldset>
-                                <input type="text" placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')">
-                                <div>
-                                </div>
-                            </fieldset>
-
-                            <fieldset>
-                                <input type="text" placeholder="Time" onfocus="(this.type='date')" onblur="(this.type='text')">
-                            </fieldset>
+                <div class="reservation">
+                    <div class="reservation-form">
+                        <div class="specialities__title"> <!-- MUdar nome specialities title -->
+                            <h3>Reservation</h3>
+                            <h1>Book Now</h1>
                         </div>
- 
-                        <fieldset>
-                            <input type="number" name="" id="" placeholder="Perseon">
-                        </fieldset>
-
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Menssage..."></textarea>
-                    </form>
-
-                    <button type="submit">Send Message</button>
+                        <form action="">
+                            
+                            <input type="text" name="" id="" placeholder="Name">
+                            <input type="email" name="" id="" placeholder="Email" pattern=".+@globex\.com">                                                        
+                            <input type="number" name="" id="" placeholder="Phone">                            
+                            <div class="dpy-block">
+                                <input type="text" placeholder="Date" style="margin-right: 5px;" onfocus="(this.type='date')" onblur="(this.type='text')" min="1950-01-01">                            
+                                <input type="text" placeholder="Time" onfocus="(this.type='time')" onblur="(this.type='text')">
+                            </div>                               
+                            <input type="number" name="" id="" placeholder="Perseon" min="1" max="6">                           
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Your Menssage..."></textarea>
+                            <div class="specialities__title">
+                                <button type="submit" class="button-m">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
+            
+            <div class="end">
                 <div>
                     <img src="resto/img/logo.png" alt="" class="__logo">
                 </div>
@@ -446,20 +434,22 @@
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum expedita aut, deserunt fugiat placeat, recusandae harum ut quos modi porro sint. Excepturi et consequatur harum explicabo voluptatem voluptas nostrum inventore?</p>  
                 </div>
 
-                <h2>Open Hours</h2>
-                <div>
-                    <ul>
-                        <li><span>Monday</span> <span>9:00 - 24:00</span></li>
-                        <li><span>Tuesday</span> <span>9:00 - 24:00</span></li>
-                        <li><span>Wednesday</span> <span>9:00 - 24:00</span></li>
-                        <li><span>Thursday</span> <span>9:00 - 24:00</span></li>
-                        <li><span>Friday</span> <span>9:00 - 02:00</span></li>
-                        <li><span>Saturday</span> <span>9:00 - 02:00</span></li>
-                        <li><span>Sunday</span> <span>Closed</span></li>
-                    </ul>
+                <div class="end__hours">
+                    <h2>Open Hours</h2>
+                    <div class="end__hours-list">
+                        <ul>
+                            <li><span>Monday</span> <span>9:00 - 24:00</span></li>
+                            <li><span>Tuesday</span> <span>9:00 - 24:00</span></li>
+                            <li><span>Wednesday</span> <span>9:00 - 24:00</span></li>
+                            <li><span>Thursday</span> <span>9:00 - 24:00</span></li>
+                            <li><span>Friday</span> <span>9:00 - 02:00</span></li>
+                            <li><span>Saturday</span> <span>9:00 - 02:00</span></li>
+                            <li><span>Sunday</span> <span>Closed</span></li>
+                        </ul>
+                    </div>
                 </div>
                 
-                <div>
+                <div class="end__newle">
                     <h2>Newletter</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -467,12 +457,13 @@
 
                     <form action="">
                         
-                        <input type="email" name="" id="" placeholder="Enter email">
-
-                        <button type="submit">Submit</button>
+                        <input type="email" name="" id="" placeholder="Enter email" pattern=".+@globex\.com" >
+                        <div class="specialities__title">
+                            <button type="submit" class="button-g">Submit</button>
+                        </div>
                     </form>
                 </div>
-
+            </div>
         </section>
     </body>
 </html>
