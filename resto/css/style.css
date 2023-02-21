@@ -465,7 +465,7 @@ header{
     ------TESMIMONY------ 
 */
 
-.tesmimony{
+/* .tesmimony{
     background-color: #cc3c3c56;
     background-image: url("../img/testi-bg.jpg");
     background-position: center;
@@ -503,7 +503,255 @@ header{
 
 .tesmimony__text p{
     color: white;
+} */
+
+/*  */
+
+/* ------SPECILITIES------ */
+.specialities{
+    /* display: flexbox; */
+    margin: 0;
+    margin-top: 100px;
+    padding: 0;
+    height: 53vw;
 }
 
+.specialities__title{
+    margin-left: auto;
+    text-align: center;
+}
+
+.specialities__div{
+    display: flex;
+}
+
+.specialities__contein{
+    padding: 5px;
+    margin: auto;
+    height: 38vw;
+}
+.specialities__contein img{
+    width: 100%;
+}
+
+.specilities__info{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+   width: 67%;
+    bottom: 100px;
+    /* left: 13%; */
+    padding: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: bottom .5s ease;
+}
+
+
+.specialities__contact{
+    display: none;
+    opacity: 0;
+}
+
+.specialities__contact ul{
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: 40px;
+    margin-top: 0;
+    display: flex;
+}
+
+.specialities__contact li{
+    margin: auto;
+}
+
+.specilities__info h1{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.specilities__info h2{
+    font-size: 18px;
+    font-weight: 100;
+    margin: 0;
+}
+
+/*  0% =  84 */
+@keyframes infor{
+    from{height: 60px}
+    to{height: 90px}
+}
+@keyframes infor-s{
+    from{height: 90px}
+    to{height: 60px}
+}
+
+@keyframes opaci{
+    from{opacity: 0}
+    to{opacity: 1;}
+}
+
+@keyframes opaci-s{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+
+.--info-1:hover, .--info-2:hover, .--info-3:hover{
+    bottom: 130px;
+    animation-name: infor;
+    animation-duration: .5s;
+    animation-fill-mode:forwards;
+}
+
+.--info-1:not(:hover), .--info-2:not(:hover), .--info-3:not(:hover){
+    animation-name: infor-s;
+    animation-duration: .5s;
+    animation-fill-mode:forwards;
+}
+
+.--info-1:hover .specialities__contact, .--info-2:hover .specialities__contact,.--info-3:hover .specialities__contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    animation-name: opaci;
+    animation-duration: .5s;
+    animation-fill-mode:forwards;
+}
+
+.--info-1:not(:hover) .specialities__contact{ 
+    animation-name: opaci-s;
+    animation-duration: 5s;
+    animation-fill-mode:forwards;
+}
+
+.icon:hover{
+    cursor: pointer;
+    background-color: #0000000e;
+}
+/* ICONES */
+
+/* Facebook */
+.face-icon{
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 20px;
+    height: 20px
+}
+.face-icon::after,
+.face-icon::before{
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box
+}
+
+.face-icon::before{
+    width: 8px;
+    height: 20px;
+    border-left: 4px solid;
+    border-top: 4px solid;
+    border-top-left-radius: 5px;
+    border-color: #f34949;
+    left: 6px
+}
+
+.face-icon::after{
+    width: 10px;
+    height: 4px;
+    background: #f34949;
+    top: 7px;
+    left: 4px;
+    transform: skew(-5deg)
+}
+
+/* twite */
+.twit-icon{
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 20px;
+    height: 20px
+}
+
+.twit-icon::after,
+.twit-icon::before{
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    left: 4px
+}
+
+.twit-icon::before{
+    width: 9px;
+    height: 14px;
+    border-left: 4px solid;
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 6px;
+    border-color: #f34949;
+    background:
+        linear-gradient(
+            to left, #f34949 12px,transparent 0)
+            no-repeat center 2px/10px 4px;
+    top: 4px
+}
+
+.twit-icon::after{
+    width: 4px;
+    height: 4px;
+    background: #f34949;
+    border-radius: 20px;
+    top: 2px;
+    box-shadow: 7px 4px 0 #f34949,7px 12px 0 #f34949
+}
+/*  */
+/*  */
+/* intagram */
+.isnta-icon{
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px #f34949;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px
+}
+
+.isnta-icon::after,
+.isnta-icon::before{
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+
+.isnta-icon:before{
+    border-radius: 3px;
+    width: 2px;
+    height: 2px;
+    background: #f34949;
+    right: 1px;
+    top: 1px
+}
+
+.isnta-icon:after{
+    border: 2px solid;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border-color: #f34949;
+    top: 3px
+}
+/*  */
 /*  */
 
