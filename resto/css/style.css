@@ -273,6 +273,10 @@ header{
     display: flex;
 }
 
+.--block, .--block-text{ /* MOBILE */
+    display: block;
+}
+
 
 .demos__img-2{
 /*     object-fit: cover;
@@ -327,7 +331,6 @@ header{
     flex-direction: column;
     /* align-items: first baseline */;
     background-color: rgb(247, 248, 249);
-
     margin-top: 40px;
 }
 .special__title{
@@ -348,8 +351,6 @@ header{
 .special__img{
     width: 35vh;
     height: 45vh;
-    min-width: 35vh;
-    min-height: 45vh;
     box-shadow: 1vh 1vh 1vh #cccccc;
     margin: 2vh;
 }
@@ -393,10 +394,11 @@ header{
 
 .menu__list{
     list-style: none;
+    padding: 0;
 }
 
 .menu__list li{
-    display: flex;
+    display: block;
     margin-bottom: 15px;
     padding-bottom: 15px;
     padding-bottom: 30px;
@@ -515,11 +517,9 @@ header{
 
 /* ------SPECILITIES------ */
 .specialities{
-    /* display: flexbox; */
     margin: 0;
     margin-top: 100px;
     padding: 0;
-    height: 53vw;
 }
 
 .specialities__title{
@@ -528,7 +528,7 @@ header{
 }
 
 .specialities__div{
-    display: flex;
+    display: flex; 
 }
 
 .specialities__contein{
@@ -546,7 +546,7 @@ header{
     text-align: center;
    width: 67%;
     bottom: 100px;
-    /* left: 13%; */
+
     padding: 13px;
     margin-left: auto;
     margin-right: auto;
@@ -585,6 +585,35 @@ header{
     margin: 0;
 }
 
+
+/*  --------------------------------- */
+
+.specialities__div{
+    display: flexbox; 
+}
+
+.specialities__contein{
+    padding: 5px;
+    margin: auto;
+}
+.specialities__contein img{
+    width: 100%;
+}
+
+.specilities__info{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+    width: 67%;
+    bottom: 100px;
+    /* left: 13%; */
+    padding: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: bottom .5s ease;
+}
+
+/* ----------------------------------- */
 /*  0% =  84 */
 @keyframes infor{
     from{height: 60px}
@@ -854,5 +883,18 @@ header{
 }
 
 
+/* ---------footer------------- */
+footer{
+    margin-top: 100px;
+    padding: 0;
+    height: 200px;
+
+}
+
+footer h1{
+    font-size: 1em;
+    font-weight: 100;
+    text-align: center;
+}
 /* ---------FIM FOOTER--------- */
 
